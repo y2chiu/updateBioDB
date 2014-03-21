@@ -32,27 +32,27 @@ else
 
     # Additional RCSB PDB FTP services
     echo "# download PDB-cluster"
-    bash ${D_PROG}/downData_PDB-cluster.sh ${D_WORK}/${D_PROT}/clusters/
+    bash ${D_PROG}/${D_PROT}/downData_PDB-cluster.sh ${D_WORK}/${D_PROT}/clusters/
     
     # PDBSum
     echo "# download PDBSum"
-    bash ${D_PROG}/downData_PDBSum.sh ${D_WORK}/${D_PROT}/PDBSum/
+    bash ${D_PROG}/${D_PROT}/downData_PDBSum.sh ${D_WORK}/${D_PROT}/PDBSum/
 
     # EBI SIFTS
     echo "# download EBI SIFTS"
-    bash ${D_PROG}/downData_EBI-SIFTS.sh ${D_WORK}/${D_PROT}/SIFTS/
+    bash ${D_PROG}/${D_PROT}/downData_EBI-SIFTS.sh ${D_WORK}/${D_PROT}/SIFTS/
     
     # UniProt  
     echo "# download UniProt"
-    bash ${D_PROG}/downData_Uniprot.sh ${D_WORK}/${D_PROT}/Uniprot/
+    bash ${D_PROG}/${D_PROT}/downData_Uniprot.sh ${D_WORK}/${D_PROT}/Uniprot/
 
     # SCOP
     echo "# download SCOP"
-    bash ${D_PROG}/downData_SCOP.sh ${D_WORK}/${D_PROT}/SCOPe/
+    bash ${D_PROG}/${D_PROT}/downData_SCOP.sh ${D_WORK}/${D_PROT}/SCOPe/
 
     # CATH
     echo "# download CATH"
-    bash ${D_PROG}/downData_CATH.sh ${D_WORK}/${D_PROT}/CATH/
+    bash ${D_PROG}/${D_PROT}/downData_CATH.sh ${D_WORK}/${D_PROT}/CATH/
 
 
     # Save an empty file with update-date info as its name
