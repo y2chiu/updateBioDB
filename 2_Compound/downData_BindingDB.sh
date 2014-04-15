@@ -56,16 +56,17 @@ else
     cd ${LOCALDIR}
 
     for f in ${fn_wget}
-    do 
+    do
+        o=$(basename $f)
         echo " downloading $f"
-        ${WGET} ${FTPSERVER}$f
+        ${WGET} -O $o ${FTPSERVER}$f
     done
 
     for f in CID SID CHEBI_ID
     do
         fn="BindingDB_${f}.txt"
         echo " downloading $fn"
-        ${WGET} ${FTPSERVER}${REMOTEDIR}${fn}
+        ${WGET} -O $fn ${FTPSERVER}${REMOTEDIR}${fn}
     done
         
     # Save an empty file with update-date info as its name
